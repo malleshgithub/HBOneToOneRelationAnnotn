@@ -21,6 +21,7 @@ private String empName;
 private double empSal;
 @Column(name="email")
 private String email;
+private String ofcname;
 @OneToOne(fetch=FetchType.EAGER,cascade=CascadeType.ALL)
 @JoinColumn(name="aidfk",unique=true)
 private Address addr;
