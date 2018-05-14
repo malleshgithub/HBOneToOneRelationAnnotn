@@ -19,6 +19,8 @@ private int empId;
 private String empName;
 @Column(name="esal")
 private double empSal;
+@Column(name="email")
+private String email;
 @OneToOne(fetch=FetchType.EAGER,cascade=CascadeType.ALL)
 @JoinColumn(name="aidfk",unique=true)
 private Address addr;
